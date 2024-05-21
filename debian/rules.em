@@ -50,3 +50,9 @@ override_dh_shlibdeps:
 override_dh_auto_install:
 	if [ -f "@(InstallationPrefix)/setup.sh" ]; then . "@(InstallationPrefix)/setup.sh"; fi && \
 	dh_auto_install
+
+override_dh_strip:
+	dh_strip -a
+	MESON_INSTALL_DESTDIR_PREFIX=. ./src/ipa/ipa-sign-install.sh \
+		./.obj-${DEB_HOST_GNU_TYPE}/src/ipa-priv-key.pem \
+		debian/@(Package)/@(InstallationPrefix)/lib/libcamera/ipa_*.so
