@@ -49,6 +49,13 @@ if [ -f "@(InstallationPrefix)/setup.sh" ]; then . "@(InstallationPrefix)/setup.
     %{_vpath_builddir}
 %meson_build
 
+%define __spec_install_post \
+    %{?__debug_package:%{__debug_install_post}} \
+    %{__arch_install_post} \
+    %{__os_install_post} \
+    %{_builddir}/%{name}-%{version}/src/ipa/ipa-sign-install.sh %{_builddir}/%{name}-%{version}/%{_vpath_builddir}/src/ipa-priv-key.pem %{buildroot}/@(InstallationPrefix)/lib/libcamera/ipa_*.so \
+%{nil}
+
 %install
 # In case we're installing to a non-standard location, look for a setup.sh
 # in the install tree and source it.  It will set things like
