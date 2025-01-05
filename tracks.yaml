@@ -1,3 +1,4 @@
+release_repo_url: git@github.com:loongros2/libcamera-release.git
 tracks:
   humble:
     actions:
