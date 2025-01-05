@@ -1,3 +1,26 @@
+## libcamera (jazzy) - 0.4.0-1
+
+The packages in the `libcamera` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r jazzy libcamera --override-release-repository-push-url git@github.com:loongros2/libcamera-release.git` on `Sun, 05 Jan 2025 02:37:13 -0000`
+
+The `libcamera` package was released.
+
+Version of package(s) in repository `libcamera`:
+
+- upstream repository: https://git.libcamera.org/libcamera/libcamera.git
+- release repository: https://github.com/loongros2/libcamera-release.git
+- rosdistro version: `0.4.0-1`
+- old version: `0.3.2-1`
+- new version: `0.4.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## libcamera (jazzy) - 0.3.2-1
 
 The packages in the `libcamera` repository were released into the `jazzy` distro by running `/home/christian/.local/bin/bloom-release --ros-distro jazzy libcamera` on `Tue, 24 Sep 2024 19:53:15 -0000`
