@@ -1,4 +1,4 @@
-From 994e210cd3ac922c5e51c17779bfc217d1831b6a Mon Sep 17 00:00:00 2001
+From c905476c82124714fa139b0cc32bb67a054a3f70 Mon Sep 17 00:00:00 2001
 From: Christian Rauch <Rauch.Christian@gmx.de>
 Date: Thu, 23 May 2024 21:10:53 +0200
 Subject: [PATCH] re-sign IPA plugins
@@ -26,5 +26,5 @@ index 07bd1e9..5fb8fe4 100644
  # In case we're installing to a non-standard location, look for a setup.sh
  # in the install tree and source it.  It will set things like
 -- 
-2.43.0
+2.47.1
 
